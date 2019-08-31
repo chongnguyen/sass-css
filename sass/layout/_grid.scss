@@ -1,20 +1,17 @@
 
 .row {
-  margin: 0;
+  width: 1140px;
+  margin: auto;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   &:not(:last-child){
     margin-bottom: $gap-row;
   }
-//   [class ^="col-"]{
-//     background-color: #fff;
-//   }
-  
-  .col {
+  [class ^="col-"]{
     &:not(:last-child){
-      margin-right: $gap-col;
-    }
+        margin-right: $gap-col;
+      }
   }
 }
 

@@ -1,0 +1,41 @@
+.composition {
+    position: relative;
+    transition: all .3s;
+   &__picture {
+       width: 50%;
+       position: absolute;
+       transition: all .3s;
+       display: inline-block;
+       border-radius: 10px;
+        &--1 {
+            top: 5rem;
+            left: 5rem;
+        }
+
+        &--2 {
+            top: 10rem;
+            left: 25rem;
+        }
+
+        &--3 {
+            top: 20rem;
+            left: 10rem;
+        }
+
+       
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 5px 5px 15px #000;
+            z-index: 2;
+            border: 10px solid $color-blue;
+            padding:5px;
+        }
+   }
+
+   &:hover &__picture:not(:hover){
+       filter: brightness(80%) blur(3px);
+       z-index: -2;
+       transform: scale(.9);
+   }
+
+}

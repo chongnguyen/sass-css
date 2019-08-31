@@ -1,0 +1,20 @@
+.heading-secondary {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    word-spacing: -1rem;
+    display: inline-block;
+
+    background-image: linear-gradient(225deg, rgba($color-pink, .5) 0%,
+     rgba($color-purple, .8) 50%, rgba($color-blue, .8) 100%);
+     color: transparent;
+     -webkit-background-clip: text;
+     transition: all .3s;
+
+     &:hover {
+         cursor: pointer;
+         transform: skewY(5deg) scale(1.1);
+         letter-spacing: 0.3rem;
+         text-shadow: .5rem .5rem .7rem rgba(0, 0, 0, .5);
+     }
+}

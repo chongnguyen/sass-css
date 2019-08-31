@@ -19,12 +19,12 @@
     }
 
     &:hover {
-        box-shadow: 0px 9px 15px #111;
+        box-shadow: 0px 9px 15px rgba(17, 17, 17, 0.63);
         transform: translateY(-5px);
     }
 
     &:active {
-        box-shadow: 0px 5px 10px #111;
+        box-shadow: 0px 5px 10px rgba(17, 17, 17, 0.863);
         transform: translateY(-1px);
     }
 
